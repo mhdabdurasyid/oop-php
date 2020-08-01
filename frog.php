@@ -2,18 +2,14 @@
 
 class Frog extends Animal
 {
-    protected function set_legs()
+    public function __construct($name)
     {
+        $this->name = $name;
         $this->legs = 4;
     }
 
-    public function get_legs()
+    public function jump()
     {
-        $this->set_legs();
-        return $this->legs;
-    }
-
-    public function jump(){
         return "hop hop";
     }
 }
